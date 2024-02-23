@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="/14_CSS Selectors/style.css">
 </head>
+
+<style>
+    /* Element Selector */
+    div{
+        /* background-color: red; */
+    }
+    
+    /* Class Selector */
+    .red{
+        background-color: red;
+    }
+
+    /* Id Selector */
+    #green{
+        background-color: green;
+    }
+
+    /* Child Selector */
+    div > p{
+        color: blue;
+        background-color: brown;
+    }
+
+    /* Descendant Selector */
+    div p{
+        color: aqua;
+        background-color: blue;
+    }
+
+    /* Universal Selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Pseudo Selector */
+    a:visited{
+        color: yellow;
+    }
+
+    a:link{
+        color: green;
+    }
+
+    a:active{
+        background-color: red;
+    }
+
+    /* a:hover{
+        background-color: aqua;
+    } */
+
+    p:first-child{
+        background-color: salmon;
+    }
+
+</style>
+
 <body>
-    Hello there!
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <p>I am a para inside div</p>
+        <article>
+            <p>I am para inside div to inside article</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+    <a href="https://www.facebook1.com" target="_blank">Go to Facebook</a>
     <script src="/14_CSS Selectors/script.js"></script>
 </body>
+
 </html>
