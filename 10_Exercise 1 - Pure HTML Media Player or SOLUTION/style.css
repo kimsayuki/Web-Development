@@ -1,0 +1,15 @@
+button{
+    padding: 4px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgb(161, 161, 161);
+}
+
+.btn a{
+    text-decoration: none;
+    color: buttontext;
+}
+
+.btn a:hover{
+    color: grey;
+}
