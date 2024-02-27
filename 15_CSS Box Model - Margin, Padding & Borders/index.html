@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Box Model - Margin, Padding & Borders</title>
     <link rel="stylesheet" href="/15_CSS Box Model - Margin, Padding & Borders/style.css">
 </head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        background-color: aqua;
+    }
+    .box1{
+        color: purple;
+        padding: 10px;
+        margin: 25px;
+        border: 2px solid blue;
+        height: 200px;
+        box-sizing: border-box;     /* must use this proprerty when using (height or width propery) */
+
+    }
+    .box2{
+        color: red;
+        padding: 10px;
+        margin: 25px;
+        border: 2px solid black;
+        height: 200px;
+        box-sizing: border-box;     /* must use this proprerty when using (height or width propery) */
+    }
+</style>
+
 <body>
-    Hello there!
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am a another box</div>
     <script src="/15_CSS Box Model - Margin, Padding & Borders/script.js"></script>
 </body>
+
 </html>
+
+
+<!-- Margin Collapse issue image: -->
+<!-- https://miro.medium.com/v2/resize:fit:421/0*kAD00byJs8jdmXvr.png -->
