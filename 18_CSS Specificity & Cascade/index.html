@@ -6,8 +6,35 @@
     <title>CSS Specificity & Cascade</title>
     <link rel="stylesheet" href="/18_CSS Specificity & Cascade/style.css">
 </head>
+
+<style>
+    /* The Specificity of this selector is 1 */
+    h1{
+        color: aqua;
+    }
+    /* The Specificity of this selector is 1+10=11 */
+    h1.yellow{
+        color: yellow;
+    }
+    /* The Specificity of this selector is 10000 because of !important */
+    .cred{
+        color: red /* !important */;
+    }
+    /* The Specificity of this selector is 10 */
+    .cpurple{
+        color: purple;
+    }
+    /* The Specificity of this selector is 1+10+10+10+10=41  this property not work here because (a.harryclass.rohan-class[href]:hover) these things are not in html files  */
+    a.harryclass.rohan-class[href]:hover{
+        color: blueviolet;
+    }
+</style>
+
 <body>
-    Hello there!
+    <div>
+        <!-- The Specificity of inline selector is 1000 -->
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
     <script src="/18_CSS Specificity & Cascade/script.js"></script>
 </body>
 </html>
