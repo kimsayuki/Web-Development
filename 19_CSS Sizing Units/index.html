@@ -6,8 +6,54 @@
     <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
     <link rel="stylesheet" href="/19_CSS Sizing Units/style.css">
 </head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 1441px; */
+        width: 80vw;
+        margin: auto;
+        background-color: red;
+    }
+
+    .container{
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        height: 80vh;
+        margin: 23px auto;
+        font-size: 20px;
+        background-color: red;
+    }
+
+    .container p{
+        /* font-size: 1em; */
+        font-size: 1.5em;
+    }
+
+    html{
+        font-size: 12px;
+    }
+    
+</style>
+
 <body>
-    <h1>CSS Sizing Units - px, rem, em, vh, vw, % & more</h1>
+    <!-- If div is span that .box css property didn't work -->
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi soluta accusamus maxime neque iusto fuga fugiat ducimus autem assumenda illo, tempore minus sunt dignissimos pariatur alias? Ea labore inventore eius praesentium aperiam animi vitae dolorum facilis! Officia molestiae voluptatum exercitationem eius reprehenderit laborum libero nihil voluptatibus est. Cupiditate officia esse quibusdam reprehenderit itaque, porro sed dolor.
+        </p>
+    </div>
     <script src="/19_CSS Sizing Units/script.js"></script>
 </body>
 </html>
